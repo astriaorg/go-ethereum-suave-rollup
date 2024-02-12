@@ -114,11 +114,11 @@ func verifyBundleSignatures(bundles []SUAVEBundle, kettles Kettles) []SUAVEBundl
 
 func finalTxOrder(bundleTxs []SUAVEBundle, rawTxs [][]byte) [][]byte {
 	// prepend the bundle payloads to the rawTxs
-	txs := [][]byte{}
+	unbundledTxs := [][]byte{}
 	for _, bundle := range bundleTxs {
-		txs = append(txs, bundle.innerTx)
+		unbundledTxs = append(unbundledTxs, bundle.innerTx)
 	}
-	return append(txs, rawTxs...)
+	return append(unbundledTxs, rawTxs...)
 }
 
 func (s *SUAVEToBExecutionServer) ExecuteBlock(ctx context.Context, req *astriaPb.ExecuteBlockRequest) (*astriaPb.Block, error) {
