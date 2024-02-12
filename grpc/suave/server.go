@@ -3,6 +3,7 @@ package suave
 import (
 	"context"
 
+	astriaPb "buf.build/gen/go/astria/astria/protocolbuffers/go/astria/execution/v1alpha2"
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
@@ -100,7 +101,7 @@ func finalTxOrder(bundleTxs []SUAVEBundle, rawTxs [][]byte) [][]byte {
 	return append(txs, rawTxs...)
 }
 
-func (s *SUAVEToBExecutionServer) ExecuteBundle(ctx context.Context, req *execution.ExecuteBundleRequest) (*execution.ExecuteBundleResponse, error) {
+func (s *SUAVEToBExecutionServer) ExecuteBlock(ctx context.Context, req *astriaPb.ExecuteBlockRequest) (*astriaPb.Block, error) {
 	// filter out the SUAVE bundles from the raw rollup txs
 	bundles, rawTxs := filterSUAVEBundles(req.Transactions)
 	// get bundles with valid kettle signatures
