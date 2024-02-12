@@ -7,8 +7,10 @@ import (
 	"github.com/ethereum/go-ethereum/accounts"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/ethereum/go-ethereum/eth"
 	"github.com/ethereum/go-ethereum/grpc/execution"
 	"github.com/ethereum/go-ethereum/log"
+	suave "github.com/ethereum/go-ethereum/suave/sdk"
 )
 
 type Kettles = []common.Address
@@ -21,11 +23,29 @@ type SUAVEToBExecutionServer struct {
 	// The inner server implementation, drives Geth's engine API using Astria's Exeuction API requests
 	inner execution.ExecutionServiceServerV1Alpha2
 
-	// Client to the SUAVE network
+	// TODO: Client to the SUAVE network
 	suaveClient *uint
 
 	// Kettle addresses to validate against
 	kettles Kettles
+}
+
+func NewSUAVEToBExecutionServer(eth *eth.Ethereum, kettleRPC string) (*SUAVEToBExecutionServer, error) {
+	// initialize suave sdk client
+	suaveClient := suave.NewClient(kettleRPC)
+
+	// get list of kettles
+	kettles, err := suaveClient.GetKettles()
+	if err != nil {
+		log.Warn("Error getting kettles from SUAVE network", err)
+	}
+
+	return &SUAVEToBExecutionServer{
+		inner:       *execution.NewExecutionServiceServerV1Alpha2(eth),
+		suaveClient: nil,
+		kettles:     Kettles{},
+	}, nil
+
 }
 
 // filterSUAVEBundles parses out the SUAVE bundles from the raw rollup txs
