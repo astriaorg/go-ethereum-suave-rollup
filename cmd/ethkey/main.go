@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/internal/flags"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/flags"
 	"github.com/urfave/cli/v2"
 )
 

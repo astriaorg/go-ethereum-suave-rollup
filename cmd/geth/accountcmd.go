@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts/keystore"
+	"github.com/astriaorg/go-ethereum-suave-rollup/cmd/utils"
+	"github.com/astriaorg/go-ethereum-suave-rollup/crypto"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
 	"github.com/urfave/cli/v2"
 )
 

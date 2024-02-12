@@ -21,11 +21,11 @@ import (
 	"math/rand"
 	"sync"
 
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/types"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rlp"
 	mapset "github.com/deckarep/golang-set/v2"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rlp"
 )
 
 const (

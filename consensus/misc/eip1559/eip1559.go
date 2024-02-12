@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common/math"
+	"github.com/astriaorg/go-ethereum-suave-rollup/consensus/misc"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/types"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
 )
 
 // VerifyEIP1559Header verifies some header attributes which were changed in EIP-1559,

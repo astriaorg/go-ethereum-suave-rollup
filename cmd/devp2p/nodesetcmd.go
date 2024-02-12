@@ -25,11 +25,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/forkid"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/forkid"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p/enr"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rlp"
 	"github.com/urfave/cli/v2"
 )
 

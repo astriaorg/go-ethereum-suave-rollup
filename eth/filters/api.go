@@ -25,12 +25,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/astriaorg/go-ethereum-suave-rollup"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common/hexutil"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/types"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/ethapi"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rpc"
 )
 
 var (

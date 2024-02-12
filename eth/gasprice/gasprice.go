@@ -21,14 +21,14 @@ import (
 	"math/big"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/lru"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common/lru"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/types"
+	"github.com/astriaorg/go-ethereum-suave-rollup/event"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rpc"
 	"golang.org/x/exp/slices"
 )
 

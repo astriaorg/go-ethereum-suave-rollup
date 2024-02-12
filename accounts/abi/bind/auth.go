@@ -23,13 +23,13 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/external"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts/external"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts/keystore"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/types"
+	"github.com/astriaorg/go-ethereum-suave-rollup/crypto"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
 )
 
 // ErrNoChainID is returned whenever the user failed to specify a chain id.

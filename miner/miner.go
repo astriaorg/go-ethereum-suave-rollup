@@ -23,17 +23,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/txpool"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common/hexutil"
+	"github.com/astriaorg/go-ethereum-suave-rollup/consensus"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/state"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/txpool"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/types"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth/downloader"
+	"github.com/astriaorg/go-ethereum-suave-rollup/event"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
 )
 
 // Backend wraps all methods required for mining. Only full node is capable

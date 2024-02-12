@@ -24,14 +24,14 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/astriaorg/go-ethereum-suave-rollup/consensus/ethash"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/rawdb"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/state"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/vm"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/trie"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/trie"
 )
 
 func TestNodeIterator(t *testing.T) {

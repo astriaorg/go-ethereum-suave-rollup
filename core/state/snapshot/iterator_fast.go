@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
 	"golang.org/x/exp/slices"
 )
 

@@ -19,10 +19,10 @@ package pebble
 import (
 	"testing"
 
+	"github.com/astriaorg/go-ethereum-suave-rollup/ethdb"
+	"github.com/astriaorg/go-ethereum-suave-rollup/ethdb/dbtest"
 	"github.com/cockroachdb/pebble"
 	"github.com/cockroachdb/pebble/vfs"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/ethdb/dbtest"
 )
 
 func TestPebbleDB(t *testing.T) {

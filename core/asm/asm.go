@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/core/vm"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/vm"
 )
 
 // Iterator for disassembled EVM instructions

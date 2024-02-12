@@ -20,11 +20,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth/downloader"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/node"
 )
 
 // FullSyncTester is an auxiliary service that allows Geth to perform full sync

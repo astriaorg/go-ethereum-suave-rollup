@@ -20,10 +20,10 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common/hexutil"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rlp"
 )
 
 // Genesis hashes to enforce below configs on.

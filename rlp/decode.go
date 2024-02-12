@@ -28,7 +28,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/rlp/internal/rlpstruct"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rlp/internal/rlpstruct"
 	"github.com/holiman/uint256"
 )
 

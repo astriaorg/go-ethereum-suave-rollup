@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/metrics"
 )
 
 // Handler returns an HTTP handler which dump metrics in Prometheus format.

@@ -19,7 +19,7 @@ package vm
 import (
 	"errors"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
 )
 
 // LookupInstructionSet returns the instruction set for the fork configured by

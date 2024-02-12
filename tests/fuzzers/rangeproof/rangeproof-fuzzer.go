@@ -22,10 +22,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/rawdb"
+	"github.com/astriaorg/go-ethereum-suave-rollup/ethdb/memorydb"
+	"github.com/astriaorg/go-ethereum-suave-rollup/trie"
 	"golang.org/x/exp/slices"
 )
 

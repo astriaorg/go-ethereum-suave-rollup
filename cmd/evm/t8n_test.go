@@ -24,9 +24,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/cmd/evm/internal/t8ntool"
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/internal/reexec"
+	"github.com/astriaorg/go-ethereum-suave-rollup/cmd/evm/internal/t8ntool"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/cmdtest"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/reexec"
 )
 
 func TestMain(m *testing.M) {

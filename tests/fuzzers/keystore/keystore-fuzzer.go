@@ -19,7 +19,7 @@ package keystore
 import (
 	"os"
 
-	"github.com/ethereum/go-ethereum/accounts/keystore"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts/keystore"
 )
 
 func fuzz(input []byte) int {

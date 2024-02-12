@@ -25,17 +25,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/astriaorg/go-ethereum-suave-rollup"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/consensus/ethash"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/types"
+	"github.com/astriaorg/go-ethereum-suave-rollup/crypto"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth/ethconfig"
+	"github.com/astriaorg/go-ethereum-suave-rollup/node"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rpc"
 )
 
 // Verify that Client implements the ethereum interfaces.

@@ -21,8 +21,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/internal/reexec"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/cmdtest"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/reexec"
 )
 
 type testEthkey struct {

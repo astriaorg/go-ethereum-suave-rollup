@@ -24,11 +24,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/tracers"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/state"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/vm"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth/tracers"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
 )
 
 type account struct{}

@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/ethereum/go-ethereum/cmd/devp2p/internal/ethtest"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/rlpx"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/astriaorg/go-ethereum-suave-rollup/cmd/devp2p/internal/ethtest"
+	"github.com/astriaorg/go-ethereum-suave-rollup/crypto"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p/rlpx"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rlp"
 	"github.com/urfave/cli/v2"
 )
 

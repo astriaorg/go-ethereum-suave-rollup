@@ -16,7 +16,7 @@
 
 package downloader
 
-import "github.com/ethereum/go-ethereum/core/types"
+import "github.com/astriaorg/go-ethereum-suave-rollup/core/types"
 
 type DoneEvent struct {
 	Latest *types.Header

@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"net"
 
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/astriaorg/go-ethereum-suave-rollup/metrics"
 )
 
 const (

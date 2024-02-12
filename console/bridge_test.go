@@ -19,8 +19,8 @@ package console
 import (
 	"testing"
 
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/jsre"
 	"github.com/dop251/goja"
-	"github.com/ethereum/go-ethereum/internal/jsre"
 )
 
 // TestUndefinedAsParam ensures that personal functions can receive

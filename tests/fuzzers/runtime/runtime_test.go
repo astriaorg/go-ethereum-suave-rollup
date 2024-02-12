@@ -19,7 +19,7 @@ package runtime
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/core/vm/runtime"
+	"github.com/astriaorg/go-ethereum-suave-rollup/core/vm/runtime"
 )
 
 func Fuzz(f *testing.F) {

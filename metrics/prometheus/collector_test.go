@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/metrics/internal"
+	"github.com/astriaorg/go-ethereum-suave-rollup/metrics"
+	"github.com/astriaorg/go-ethereum-suave-rollup/metrics/internal"
 )
 
 func TestMain(m *testing.M) {

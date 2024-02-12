@@ -19,7 +19,7 @@ package misc
 import (
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
 )
 
 // VerifyGaslimit verifies the header gas limit according increase/decrease
