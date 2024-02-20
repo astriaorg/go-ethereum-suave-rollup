@@ -10,21 +10,19 @@ import (
 	"github.com/ethereum/go-ethereum/eth"
 	"github.com/ethereum/go-ethereum/grpc/execution"
 	"github.com/ethereum/go-ethereum/log"
-	suave "github.com/ethereum/go-ethereum/suave/sdk"
+	suaveProto "github.com/ethereum/go-ethereum/proto/gen/suave"
+	suaveSdk "github.com/ethereum/go-ethereum/suave/sdk"
+	"google.golang.org/protobuf/proto"
 )
 
 type Kettles = []common.Address
-type SUAVEBundle struct {
-	innerTx   []byte
-	signature []byte
-}
 
 type SUAVEToBExecutionServer struct {
 	// The inner server implementation, drives Geth's engine API using Astria's Exeuction API requests
 	inner execution.ExecutionServiceServerV1Alpha2
 
 	// TODO: Client to the SUAVE network
-	suaveClient *uint
+	suaveClient *suaveSdk.Client
 
 	// Kettle addresses to validate against
 	kettles Kettles
@@ -49,11 +47,12 @@ func NewSUAVEToBExecutionServer(eth *eth.Ethereum, kettleRPC string) (*SUAVEToBE
 }
 
 // filterSUAVEBundles parses out the SUAVE bundles from the raw rollup txs
-func filterSUAVEBundles(txs [][]byte) ([]SUAVEBundle, [][]byte) {
-	bundles, rawTxs := []SUAVEBundle{}, [][]byte{}
+func filterSUAVEBundles(txs [][]byte) ([]suaveProto.SUAVEBundle, [][]byte) {
+	bundles, rawTxs := []suaveProto.SUAVEBundle{}, [][]byte{}
 	for _, tx := range txs {
 		// TODO: try to parse as a SUAVE bundle
-		bundle, err := parseSUAVEBundle(tx)
+		bundle := new(suaveProto.SUAVEBundle)
+		err := proto.Unmarshal(tx, bundle)
 		if err != nil {
 			// if it's not a SUAVE bundle, it's a raw tx
 			// raw tx parsing and validation done further down the pipeline
@@ -66,7 +65,7 @@ func filterSUAVEBundles(txs [][]byte) ([]SUAVEBundle, [][]byte) {
 	return bundles, rawTxs
 }
 
-func verifyBundleSignature(bundle SUAVEBundle, kettles Kettles) bool {
+func verifyBundleSignature(bundle suaveProto.SUAVEBundle, kettles Kettles) bool {
 	// make digestHash out of innerTx
 	hashedBody := crypto.Keccak256Hash(bundle.innerTx).Hex()
 	digestHash := accounts.TextHash([]byte(hashedBody))
@@ -98,8 +97,8 @@ func verifyBundleSignature(bundle SUAVEBundle, kettles Kettles) bool {
 }
 
 // getPayloadsWithValidKettleSignatures returns only the bundles that have valid kettle signatures
-func verifyBundleSignatures(bundles []SUAVEBundle, kettles Kettles) []SUAVEBundle {
-	validBundles := []SUAVEBundle{}
+func verifyBundleSignatures(bundles []suaveProto.SUAVEBundle, kettles Kettles) []suaveProto.SUAVEBundle {
+	validBundles := []suaveProto.SUAVEBundle{}
 	for i, bundle := range bundles {
 		// verify the signature
 		if verifyBundleSignature(bundle, kettles) {
