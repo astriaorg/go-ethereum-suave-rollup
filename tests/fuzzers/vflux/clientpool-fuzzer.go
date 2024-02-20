@@ -24,14 +24,14 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/ethdb/memorydb"
-	"github.com/ethereum/go-ethereum/les/vflux"
-	vfs "github.com/ethereum/go-ethereum/les/vflux/server"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common/mclock"
+	"github.com/astriaorg/go-ethereum-suave-rollup/ethdb/memorydb"
+	"github.com/astriaorg/go-ethereum-suave-rollup/les/vflux"
+	vfs "github.com/astriaorg/go-ethereum-suave-rollup/les/vflux/server"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p/enode"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p/enr"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rlp"
 )
 
 var (

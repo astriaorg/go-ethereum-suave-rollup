@@ -21,8 +21,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts/abi"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common"
 )
 
 // Tests that all the selectors contained in the 4byte database are valid.

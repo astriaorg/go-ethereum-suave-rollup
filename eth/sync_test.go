@@ -20,11 +20,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/protocols/eth"
-	"github.com/ethereum/go-ethereum/eth/protocols/snap"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth/downloader"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth/protocols/eth"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth/protocols/snap"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p/enode"
 )
 
 // Tests that snap sync is disabled after a successful sync cycle.

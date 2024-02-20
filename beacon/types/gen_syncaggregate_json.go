@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common/hexutil"
 )
 
 var _ = (*syncAggregateMarshaling)(nil)

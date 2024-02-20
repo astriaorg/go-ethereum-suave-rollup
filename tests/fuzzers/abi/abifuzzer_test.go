@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/accounts/abi"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts/abi"
 	fuzz "github.com/google/gofuzz"
 )
 

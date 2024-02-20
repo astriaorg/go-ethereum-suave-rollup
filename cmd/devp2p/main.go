@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/internal/debug"
-	"github.com/ethereum/go-ethereum/internal/flags"
-	"github.com/ethereum/go-ethereum/p2p/enode"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/debug"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/flags"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p/enode"
 	"github.com/urfave/cli/v2"
 )
 

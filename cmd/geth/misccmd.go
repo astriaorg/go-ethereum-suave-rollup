@@ -22,8 +22,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/version"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/version"
+	"github.com/astriaorg/go-ethereum-suave-rollup/params"
 	"github.com/urfave/cli/v2"
 )
 

@@ -16,7 +16,7 @@
 
 package eth
 
-import "github.com/ethereum/go-ethereum/metrics"
+import "github.com/astriaorg/go-ethereum-suave-rollup/metrics"
 
 // meters stores ingress and egress handshake meters.
 var meters bidirectionalMeters

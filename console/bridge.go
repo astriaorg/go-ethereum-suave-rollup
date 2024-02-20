@@ -25,13 +25,13 @@ import (
 	"strings"
 	"time"
 
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts/scwallet"
+	"github.com/astriaorg/go-ethereum-suave-rollup/accounts/usbwallet"
+	"github.com/astriaorg/go-ethereum-suave-rollup/common/hexutil"
+	"github.com/astriaorg/go-ethereum-suave-rollup/console/prompt"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/jsre"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rpc"
 	"github.com/dop251/goja"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/console/prompt"
-	"github.com/ethereum/go-ethereum/internal/jsre"
-	"github.com/ethereum/go-ethereum/rpc"
 )
 
 // bridge is a collection of JavaScript utility methods to bride the .js runtime

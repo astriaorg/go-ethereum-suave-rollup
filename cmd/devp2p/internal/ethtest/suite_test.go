@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/utesting"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth"
+	"github.com/astriaorg/go-ethereum-suave-rollup/eth/ethconfig"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/utesting"
+	"github.com/astriaorg/go-ethereum-suave-rollup/node"
+	"github.com/astriaorg/go-ethereum-suave-rollup/p2p"
 )
 
 var (

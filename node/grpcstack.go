@@ -5,7 +5,7 @@ import (
 	"sync"
 
 	astriaGrpc "buf.build/gen/go/astria/astria/grpc/go/astria/execution/v1alpha2/executionv1alpha2grpc"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/astriaorg/go-ethereum-suave-rollup/log"
 	"google.golang.org/grpc"
 )
 

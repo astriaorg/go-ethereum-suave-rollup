@@ -23,9 +23,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/internal/reexec"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/cmdtest"
+	"github.com/astriaorg/go-ethereum-suave-rollup/internal/reexec"
+	"github.com/astriaorg/go-ethereum-suave-rollup/rpc"
 )
 
 type testgeth struct {
